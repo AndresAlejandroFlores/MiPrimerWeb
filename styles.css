@@ -9,10 +9,11 @@ header{
 }
 main footer{
     display: flex;
-    justify-items: center;
+    justify-content: center;
 }
 footer{
     height: 200px;
+    align-content: center;
 }
 nav{
     display: flex;

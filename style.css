@@ -7,6 +7,13 @@
 header{
     background-color:#112d4e;
 }
+main footer{
+    display: flex;
+    justify-items: center;
+}
+footer{
+    height: 200px;
+}
 nav{
     display: flex;
     justify-content:space-between;
@@ -51,6 +58,12 @@ a{
 
 li:hover{
     background-color: #112d4e;
+}
+
+.container img{
+    height: 100px;
+    display: flex;
+    justify-self: center;
 }
 
 @media (max-width:767px){

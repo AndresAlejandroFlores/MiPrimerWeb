@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar" role="navigation">
+                <img src="culture-beat.svg" alt="Culture Beat">
+                <div class="ocultar" onclick="efecto()">
+                    <i>MENU</i>
+                </div>
+                <ul class="toggle">
+                    <ul class="toggle">
+                        <li class="op1"><a href="index.html">Inicio</a></li>
+                        <li class="op2"><a href="services.html">Servicios</a></li>
+                        <li class="op3"><a href="#">Contacto</a></li>
+                        <li class="op4"><a href="about.html">Acerca de</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1>Contacto</h1>
+                <p>Tiempo de respuesta promedio de 8hs.</p>
+                <h2>Encabezado nivel 2</h2>
+                <p>Esto es lo que se va a ver en este parrafo 2</p>
+                <h2>Encabezado nivel 2</h2>
+                <p>Imagen:</p>
+                <img src="culture-beat.svg" alt="Culture Beat">
+                <form action="">
+                    <h1>Formulario</h1>
+                    <label>
+                        <p>Apellido</p>
+                        <input type="text" placeholder="Apellido" id="apellido">
+                    </label>
+                    <label>
+                        <p>Nombre</p>
+                        <input type="text" placeholder="Nombre" id="nombre">
+                    </label>
+                    <label>
+                        <p>Email</p>
+                        <input type="email" placeholder="Email" id="correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                    </label>
+                    <label>
+                        <p>Mensaje</p>
+                        <textarea placeholder="Mensaje" id="mensaje"></textarea>
+                    </label>
+                    <label>
+                        <p></p>
+                        <button type="submit" onclick="comprobar()">Enviar</button>
+                    </label>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <span>&copy; 2023 Culture Beat. Todos los derechos reservados.</span>
+        </footer>
+    </body>
+</html>

@@ -87,16 +87,15 @@ li:hover{
     }
     nav ul li{
         width: 100%;
+        height: 32px;
     }
     .ocultar{
         background-color: #164884;
         margin-top: 8px;
+        padding: 12px;
         display:flex;
         justify-content:start;
         align-content: center;
-    }
-    .ocultar p{
-        padding: 14px 8px;
     }
 }
 @media not((max-width:767px)){

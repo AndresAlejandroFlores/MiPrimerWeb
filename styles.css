@@ -98,8 +98,3 @@ li:hover{
         align-content: center;
     }
 }
-@media not((max-width:767px)){
-    .listado{
-        display: flex;
-    }
-}

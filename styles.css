@@ -128,10 +128,12 @@ form{
     .ocultar{
         background-color: #164884;
         margin-top: 8px;
-        padding: 12px;
+        height: 32px;
+        padding: 10px;
         display:flex;
         justify-content:start;
         align-content: center;
+        font-weight: bold;
     }
     .tresimg{
         flex-wrap: wrap;

@@ -15,7 +15,6 @@ function mostrarmenu(){
         visible = false;
     }
 }
-window.addEventListener('load', efecto);
 
 function comprobar(){
     let apellido1=document.getElementById('apellido').value;
@@ -46,3 +45,12 @@ function comprobar(){
         alert("Mensaje enviado");
     }
 }
+
+
+window.addEventListener('resize', function(){
+    let menulistado =  document.querySelector(".listado");
+    let anchoventana = this.window.innerWidth;
+    if(anchoventana >=767){
+        menulistado.style.display = "flex";
+    }
+})

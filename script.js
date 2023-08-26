@@ -22,6 +22,7 @@ function comprobar(){
     let nombre1=document.getElementById('nombre').value;
     let correo1=document.getElementById('correo').value;
     let mensaje1=document.getElementById('mensaje').value;
+    let expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
 
     let aux = true;
 
@@ -37,7 +38,10 @@ function comprobar(){
         alert('No ingreso su Correo');
         aux = false;
     }
-    /*}while (aux == false)*/
+    if (!expresion.test(correo1)){
+        alert('Correo no valido');
+        aux = false;
+    }
     if(aux == true){
         alert("Mensaje enviado");
     }

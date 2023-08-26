@@ -17,3 +17,28 @@ function mostrarmenu(){
 }
 window.addEventListener('load', efecto);
 
+function comprobar(){
+    let apellido1=document.getElementById('apellido').value;
+    let nombre1=document.getElementById('nombre').value;
+    let correo1=document.getElementById('correo').value;
+    let mensaje1=document.getElementById('mensaje').value;
+
+    let aux = true;
+
+    if(apellido1==''){
+        alert('No ingreso su Apellido');
+        aux = false;
+    }
+    if(nombre1==''){
+        alert('No ingreso su Nombre');
+        aux = false;
+    }
+    if(correo1==''){
+        alert('No ingreso su Correo');
+        aux = false;
+    }
+    /*}while (aux == false)*/
+    if(aux == true){
+        alert("Mensaje enviado");
+    }
+}

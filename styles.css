@@ -93,6 +93,11 @@ form{
     align-content: center;
 }
 
+.tresimg{
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width:767px){
     *{
         font-size: 0.8rem;
@@ -118,5 +123,9 @@ form{
         display:flex;
         justify-content:start;
         align-content: center;
+    }
+    .tresimg{
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }

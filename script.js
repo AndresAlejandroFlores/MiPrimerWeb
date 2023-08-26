@@ -16,7 +16,7 @@ function mostrarmenu(){
 window.addEventListener('resize', function(){
     let menulistado =  document.querySelector(".listado");
     let anchoventana = this.window.innerWidth;
-    if(anchoventana >=767){
+    if(anchoventana > 767){
         menulistado.style.display = "flex";
     }else{
         menulistado.style.display = "none";

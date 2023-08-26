@@ -10,6 +10,8 @@ header{
 
 footer{
     padding: 8px;
+    display: flex;
+    justify-content: center;
 }
 span{
     padding:8px;

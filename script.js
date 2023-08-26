@@ -1,20 +1,27 @@
-let visible = false;
+var visible = false;
 function efecto(){
     let aux = document.querySelector('.ocultar');
-    aux.addEventListener('click', mostrarmenu);
+    aux.addEventListener('click', mostrarmenu());
 }
 function mostrarmenu(){
     let aux = document.querySelector('.listado');
     if (!visible){
         aux.style.display = "flex";
         visible = true;
-    }
-    else
-    {
+    }else{
         aux.style.display="none";
         visible = false;
     }
 }
+window.addEventListener('resize', function(){
+    let menulistado =  document.querySelector(".listado");
+    let anchoventana = this.window.innerWidth;
+    if(anchoventana >=767){
+        menulistado.style.display = "flex";
+    }else{
+        menulistado.style.display = "none";
+    }
+})
 
 function comprobar(){
     let apellido1=document.getElementById('apellido').value;
@@ -45,12 +52,3 @@ function comprobar(){
         alert("Mensaje enviado");
     }
 }
-
-
-window.addEventListener('resize', function(){
-    let menulistado =  document.querySelector(".listado");
-    let anchoventana = this.window.innerWidth;
-    if(anchoventana >=767){
-        menulistado.style.display = "flex";
-    }
-})

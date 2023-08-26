@@ -99,6 +99,13 @@ form{
     display: flex;
     justify-content: center;
 }
+#correo{
+    width: 300px;
+}
+#mensaje{
+    width: 450px;
+    height: 100px;
+}
 
 @media (max-width:767px){
     *{

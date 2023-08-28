@@ -18,8 +18,10 @@ window.addEventListener('resize', function(){
     let anchoventana = this.window.innerWidth;
     if(anchoventana > 767){
         menulistado.style.display = "flex";
+        visible = true;
     }else{
         menulistado.style.display = "none";
+        visible = false;
     }
 })
 
@@ -27,7 +29,6 @@ function comprobar(){
     let apellido1=document.getElementById('apellido').value;
     let nombre1=document.getElementById('nombre').value;
     let correo1=document.getElementById('correo').value;
-    let mensaje1=document.getElementById('mensaje').value;
     let expresion = /^[a-z][\w.-]+@\w[\w.-]+\.[\w.-]*[a-z][a-z]$/i;
 
     let aux = true;
@@ -51,4 +52,8 @@ function comprobar(){
     if(aux == true){
         alert("Mensaje enviado");
     }
+}
+
+function btnalert(){
+    alert("¡¡¡Alertaaa!!!");
 }

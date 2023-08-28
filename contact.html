@@ -11,12 +11,12 @@
     <body>
         <header>
             <nav class="navbar" role="navigation">
-                <img src="culture-beat.svg" alt="Culture Beat">
+                <img src="culture-beat.svg" alt="Culture Beat"/>
                 <div class="ocultar" onclick="efecto()"><i class="fa-solid fa-bars"> M E N U</i></div>
                 <ul class="listado">
-                    <li><a href="#">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="services.html">Servicios</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="#">Contacto</a></li>
                     <li><a href="about.html">Acerca de</a></li>
                 </ul>
             </nav>
@@ -32,13 +32,13 @@
                 <form name="formulario" action="#">
                     <h2>Enviar Mensaje</h2>
                     <label><p>Apellido</p>
-                        <input type="text" placeholder="Apellido" id="apellido">
+                        <input type="text" placeholder="Apellido" id="apellido"/>
                     </label>
                     <label><p>Nombre</p>
-                        <input type="text" placeholder="Nombre" id="nombre">
+                        <input type="text" placeholder="Nombre" id="nombre"/>
                     </label>
                     <label><p>Email</p>
-                        <input type="email" placeholder="Email" id="correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
+                        <input type="email" placeholder="Email" id="correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"/>
                     </label>
                     <label><p>Mensaje</p>
                         <textarea placeholder="Mensaje" id="mensaje"></textarea>
@@ -51,6 +51,7 @@
         </main>
         <footer>
             <span>&copy; 2023 Culture Beat. Todos los derechos reservados.</span>
+            <input type="button" value="Alerta" class = "btnalerta" onclick="btnalert()"/>
         </footer>
     </body>
 </html>

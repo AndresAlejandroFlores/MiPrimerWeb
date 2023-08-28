@@ -11,10 +11,11 @@ header{
 footer{
     padding: 8px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 span{
     padding:8px;
+    align-self: center;
 }
 nav{
     display: flex;
@@ -66,7 +67,7 @@ i{
 }
 
 li:hover{
-    background-color: #112d4e;
+    background-color: rgb(0, 96, 255);
 }
 
 .container img{
@@ -104,6 +105,20 @@ form{
 #mensaje{
     width: 450px;
     height: 100px;
+}
+.btnalerta{
+    border:1px #164884 solid;
+    border-radius: 3px;
+    background-color: #164884;
+    font-weight: bold;
+    color:white;
+    width: 56px;
+    height: 24px;
+    transition: all ease-in-out 250ms;
+    align-self: center;
+}
+.btnalerta:hover{
+    background-color:rgb(0, 96, 255);
 }
 
 @media (max-width:767px){

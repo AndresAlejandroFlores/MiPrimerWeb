@@ -1,4 +1,12 @@
-var visible = false;
+document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".ocultar");
+    const navList = document.querySelector(".listado");
+
+    menuIcon.addEventListener("click", function () {
+        navList.classList.toggle("active");
+    });
+});
+/*var visible = false;
 function efecto(){
     let aux = document.querySelector('.ocultar');
     aux.addEventListener('click', mostrarmenu());
@@ -24,7 +32,7 @@ window.addEventListener('resize', function(){
         visible = false;
     }
 })
-
+*/
 function comprobar(){
     let apellido1=document.getElementById('apellido').value;
     let nombre1=document.getElementById('nombre').value;
@@ -55,5 +63,5 @@ function comprobar(){
 }
 
 function btnalert(){
-    alert("¡¡¡Alertaaa!!!");
+    alert("¡Alerta!");
 }

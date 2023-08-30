@@ -1,17 +1,27 @@
 *{
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-header{
-    background-color:#112d4e;
+body{
+    scrollbar-gutter: auto;
 }
-
+header{
+    background-color:#333;
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
 footer{
+    background-color:#333;
+    color:#fff;
     padding: 8px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
 }
 span{
     padding:8px;
@@ -21,53 +31,52 @@ nav{
     display: flex;
     justify-content:space-between;
     align-content: center;
-    padding: 8px;
     margin: 0px;
 }
 nav img{
-    padding: 0px;
-    height: 40px;
+    padding: 8px;
+    height: 48px;
 }
 
 nav ul{
-    background-color: #112d4e;
+    background-color: #333;
     text-align: center;
     display:inline-block;
 }
 
 ul li{
-    display:inline-block;
-    padding: 10px;
+
     list-style: none;
-    height: 40px;
-    width: 112px;
-    background-color: #164884;
-    transition: all ease-in-out 250ms;
+    height: 48px;
+    width: 96px;
+    background-color: #333;
+    display: flex;
 }
 
 nav ul li a{
+    width: 112px;
     text-decoration: none;
-    font-weight: bold;
-    color:white;
-    padding: 8px;
+    color:#fff;
+    line-height: 48px;
     white-space: nowrap;
-
+    background-color: #e04115;
+    transition: background-color 0.3s ease;
 }
 .listado{
     display:flex;
 }
-i{
-    font-size: 14px;
-}
+
 .ocultar{
     color:white;
     cursor:pointer;
     display:none;
     flex-direction: row;
+    padding: 0px;
+    height: 32px;
 }
 
-li:hover{
-    background-color: rgb(0, 96, 255);
+li a:hover{
+    background-color: #ff5733;
 }
 
 .container img{
@@ -77,6 +86,9 @@ li:hover{
 
 .container{
     padding:16px;
+    width: 800px;
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
 }
 .container h1,h2,p{
     margin: 8px;
@@ -87,38 +99,46 @@ form input,textarea,button{
 form{
     border: 1px black solid;
     border-radius: 3px;
-    width: 480px;
+    width: 426px;
     padding: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
 .tresimg{
     display: flex;
     justify-content: center;
 }
+.servimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servimg img{
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
 #correo{
     width: 300px;
 }
 #mensaje{
-    width: 450px;
+    width: 400px;
     height: 100px;
 }
 .btnalerta{
-    border:1px #164884 solid;
-    border-radius: 3px;
-    background-color: #164884;
-    font-weight: bold;
-    color:white;
-    width: 56px;
-    height: 24px;
-    transition: all ease-in-out 250ms;
+    border: 1px #164884 solid;
+    border-radius: 1px;
+    background-color: #e04115;
+    color:#fff;
+    width: 112px;
+    height: 32px;
+    transition: background-color 0.3s ease;
     align-self: center;
+    cursor:pointer;
 }
 .btnalerta:hover{
-    background-color:rgb(0, 96, 255);
+    background-color:#ff5733;
 }
 
 @media (max-width:767px){
@@ -126,7 +146,7 @@ form{
         font-size: 0.9rem;
     }
     nav{
-        background-color: #112d4e;
+        background-color: #333;
         display: flex;
         flex-direction: column;
     }
@@ -135,23 +155,39 @@ form{
         width: 100%;
         flex-direction: column;
     }
+    .listado.active {
+        display: flex;
+    }
+    
     nav ul li{
         width: 100%;
         height: 32px;
     }
 
-    .ocultar{
-        background-color: #164884;
-        margin-top: 8px;
+    nav ul li a{
+        width: 100%;
         height: 32px;
-        padding: 10px;
+        line-height: 32px;
+    }
+
+    .ocultar{
+        background-color: #e04115;
+        height: 32px;
+        padding: 2px 8px;
         display:flex;
         justify-content:start;
         align-content: center;
-        font-weight: bold;
+        /*font-weight: bold;*/
+    }
+    .ocultar i{
+        line-height: 28px;
+        font-size: 24px;
     }
     .tresimg{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    footer{
+        flex-direction: column;
     }
 }

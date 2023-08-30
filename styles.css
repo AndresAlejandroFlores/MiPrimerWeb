@@ -36,6 +36,7 @@ nav{
 nav img{
     padding: 8px;
     height: 48px;
+    cursor:pointer;
 }
 
 nav ul{
@@ -60,6 +61,7 @@ nav ul li a{
     line-height: 48px;
     white-space: nowrap;
     background-color: #e04115;
+    border: 1px #e04115 solid;
     transition: background-color 0.3s ease;
 }
 .listado{
@@ -74,7 +76,9 @@ nav ul li a{
     padding: 0px;
     height: 32px;
 }
-
+.ocultar:hover{
+    background-color: #ff5733;
+}
 li a:hover{
     background-color: #ff5733;
 }
@@ -127,7 +131,7 @@ form{
     height: 100px;
 }
 .btnalerta{
-    border: 1px #164884 solid;
+    border: 1px #e04115 solid;
     border-radius: 1px;
     background-color: #e04115;
     color:#fff;

@@ -1,38 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".ocultar");
     const navList = document.querySelector(".listado");
+    const icono = document.querySelector(".fa-solid");
 
     menuIcon.addEventListener("click", function () {
         navList.classList.toggle("active");
+        icono.classList.toggle("fa-bars");
+        icono.classList.toggle("fa-xmark");
     });
 });
-/*var visible = false;
-function efecto(){
-    let aux = document.querySelector('.ocultar');
-    aux.addEventListener('click', mostrarmenu());
-}
-function mostrarmenu(){
-    let aux = document.querySelector('.listado');
-    if (!visible){
-        aux.style.display = "flex";
-        visible = true;
-    }else{
-        aux.style.display="none";
-        visible = false;
-    }
-}
-window.addEventListener('resize', function(){
-    let menulistado =  document.querySelector(".listado");
-    let anchoventana = this.window.innerWidth;
-    if(anchoventana > 767){
-        menulistado.style.display = "flex";
-        visible = true;
-    }else{
-        menulistado.style.display = "none";
-        visible = false;
-    }
-})
-*/
+
 function comprobar(){
     let apellido1=document.getElementById('apellido').value;
     let nombre1=document.getElementById('nombre').value;
